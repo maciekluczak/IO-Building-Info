@@ -27,4 +27,5 @@ public abstract class Location {
     public abstract float getHeatingPerUnit();
     public abstract float getLightPerUnit();
     public abstract List<Room> getHeatingOverLimit(float limit);
+
 }

@@ -52,7 +52,7 @@ public class Building extends Location{
     public List<Room> getHeatingOverLimit(float limit){
         List<Room> list = new ArrayList<Room>();
         for (Floor tFloor : this.floors){
-            for (Room tRoom : tFloor.getRooms()){
+            for (Room tRoom : tFloor.getRooms()) {
                 if (tRoom.getHeatingPerUnit() > limit) {
                     list.add(tRoom);
                 }

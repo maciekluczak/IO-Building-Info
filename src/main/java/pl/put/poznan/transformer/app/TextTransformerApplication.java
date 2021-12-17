@@ -50,6 +50,7 @@ public class TextTransformerApplication {
             System.out.println(Integer.toString(tRoom.getId()));
         }
     }
+
     //wszystkie funkcje nazywaja sie tak samo dla kazdej klasy i w zaleznosci z ktorego obiektu sie je wywola daja inny efekt
     //np getArea() dla pokoju zwroci po prostu powierzchnie pokoju, ale dla budynku poda juz laczna sume wszystkich pokojow w budynku itd
     //funkcja getHeatingOverLimit(float limit) zwraca liste pokojow jako liste obiektow typu Room, mozna uzyc na obiekcie kazdej klasy, ale nawet w przypadku pojedynczego pokoju bedzie to lista, wiec trzeba o tym pamietac
