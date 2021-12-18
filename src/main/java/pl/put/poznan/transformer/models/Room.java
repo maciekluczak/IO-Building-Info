@@ -1,13 +1,11 @@
 package pl.put.poznan.transformer.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Room extends Location {
-    private float area;
-    private float cube;
-    private float heating;
-    private float light;
+    private float area, cube, heating, light;
 
     public Room(int id, String name, float area, float cube, float heating, float light){
         super(id, name);
@@ -32,10 +30,7 @@ public class Room extends Location {
     public  float getHeatingPerUnit(){
         return heating/area;
     }
-    public  float getLightPerUnit(){
-        return light/cube;
-    }
-
+    public  float getLightPerUnit(){ return light/cube; }
 
     public List<Room> getHeatingOverLimit(float limit){
         List<Room> roomsList = new ArrayList<Room>();
