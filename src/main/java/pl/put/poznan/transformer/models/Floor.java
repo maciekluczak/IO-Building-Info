@@ -6,6 +6,7 @@ import java.util.List;
 public class Floor extends Location {
     private List<Room> rooms;
 
+
     public Floor(int id, String name, List<Room> rooms){
         super(id, name);
         this.rooms = rooms;
