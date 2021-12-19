@@ -3,7 +3,7 @@ package pl.put.poznan.transformer.models;
 import java.io.Serializable;
 import java.util.List;
 
-public abstract class Location implements Serializable {
+public abstract class Location implements Localization, Serializable {
 
     private int id;
     private String name;
