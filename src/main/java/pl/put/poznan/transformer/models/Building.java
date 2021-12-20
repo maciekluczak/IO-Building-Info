@@ -13,13 +13,16 @@ public class Building extends Location{
     /**
      * konstruktor o parametrach:
      *
-     * @param id        id budynku
      * @param name      nazwa budynku
      * @param floors    lista pieter w budynku
      */
-    public Building(int id, String name, List<Floor> floors){
-        super(id, name);
+    public Building( String name, List<Floor> floors){
+        super(name);
         this.floors = floors;
+    }
+
+    public List<Floor> getFloors() {
+        return floors;
     }
 
     /**
@@ -27,6 +30,7 @@ public class Building extends Location{
      *
      * @return laczna powierzchnia budynku
      */
+
     public float getArea(){
         float sumArea = 0;
         for (Floor tFloor : this.floors){
