@@ -12,14 +12,14 @@ public class Floor extends Location {
     /**
      * konstruktor z parametrami:
      *
-     * @param id        id pietra
      * @param name      nazwa pietra
      * @param rooms     lista pokojow znajdujacych sie na pietrze
      */
-    public Floor(int id, String name, List<Room> rooms){
-        super(id, name);
+    public Floor( String name, List<Room> rooms){
+        super(name);
         this.rooms = rooms;
     }
+
 
     /**
      * funkcja zwracajaca laczna powierzchnia pokoi na pietrze

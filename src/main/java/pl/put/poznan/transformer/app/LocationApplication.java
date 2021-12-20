@@ -2,34 +2,28 @@ package pl.put.poznan.transformer.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import pl.put.poznan.transformer.data.DataHolder;
-import pl.put.poznan.transformer.models.Building;
-import pl.put.poznan.transformer.models.Floor;
-import pl.put.poznan.transformer.models.Room;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest"})
-public class TextTransformerApplication {
+public class LocationApplication {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        SpringApplication.run(TextTransformerApplication.class, args);
+        SpringApplication.run(LocationApplication.class, args);
 
 
 
         //Read ALL Models from File (Folder> data)
-        DataHolder dataHolder = new DataHolder();
-        dataHolder.readModels();
+//        DataHolder dataHolder = new DataHolder();
+//        dataHolder.readModels();
 
 //      Show data from file
-        dataHolder.showData();
+//        dataHolder.showData();
 
 //      Set Building B1 From file
-        Building b1= dataHolder.getBuildingArray().get(0);
+//        Building b1= dataHolder.getBuildingArray().get(0);
 
 
 // Input data (Manual)
@@ -70,14 +64,14 @@ public class TextTransformerApplication {
 //        Building b1 = new Building(6, "b1", floorsList);
 //        dataHolder.addBuilding(b1);
 
-        System.out.println("Building " + b1.getName() + " Light Power: " + Float.toString(b1.getLight()));
-        System.out.println("Building " + b1.getName() + " Full Area: " + Float.toString(b1.getCube()));
-        System.out.println("Building " + b1.getName() + " Light per Unit: " + Float.toString(b1.getLightPerUnit()));
-
-        List<Room> rooms = b1.getHeatingOverLimit(0.2f);
-        for (Room tRoom : rooms) {
-            System.out.println("Room Heating Over: "+ Integer.toString(tRoom.getId()));
-        }
+//        System.out.println("Building " + b1.getName() + " Light Power: " + Float.toString(b1.getLight()));
+//        System.out.println("Building " + b1.getName() + " Full Area: " + Float.toString(b1.getCube()));
+//        System.out.println("Building " + b1.getName() + " Light per Unit: " + Float.toString(b1.getLightPerUnit()));
+//
+//        List<Room> rooms = b1.getHeatingOverLimit(0.2f);
+//        for (Room tRoom : rooms) {
+//            System.out.println("Room Heating Over: "+ Integer.toString(tRoom.getId()));
+//        }
 //        dataHolder.showData();
 //        dataHolder.saveModels();
 

@@ -13,7 +13,6 @@ public class Room extends Location {
     /**
      * konstruktor z parametrami:
      *
-     * @param id        id pokoju
      * @param name      nazwa pokoju
      * @param area      powierzchnia pokoju
      * @param cube      kubatura pokoju
@@ -21,8 +20,8 @@ public class Room extends Location {
      * @param light     laczna moc oswietlenia w pokoju
      */
 
-    public Room(int id, String name, float area, float cube, float heating, float light){
-        super(id, name);
+    public Room( String name, float area, float cube, float heating, float light){
+        super( name);
         this.area = area;
         this.cube = cube;
         this.heating = heating;

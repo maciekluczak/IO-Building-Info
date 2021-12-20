@@ -9,9 +9,8 @@ import java.util.List;
  *          Building
  *          Floor
  */
-
 public abstract class Location implements Localization, Serializable {
-
+    private static int count = 0;
     private int id;
     private String name;
 
@@ -24,11 +23,10 @@ public abstract class Location implements Localization, Serializable {
     /**
      * konstruktor o parametrach:
      *
-     * @param id    id lokacji
      * @param name  nazwa lokacji
      */
-    public Location(int id, String name){
-        this.id = id;
+    public Location(String name){
+        this.id = ++count;
         this.name = name;
     }
 
