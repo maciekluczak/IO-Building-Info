@@ -1,6 +1,5 @@
 package pl.put.poznan.transformer.data;
 
-import org.apache.tomcat.util.bcel.classfile.JavaClass;
 import pl.put.poznan.transformer.models.Building;
 import pl.put.poznan.transformer.models.Floor;
 import pl.put.poznan.transformer.models.Room;
@@ -17,7 +16,7 @@ public class DataHolder  {
 
     public DataHolder() {
         //Create Arrays for models
-        filePath = new String("IO-Building-Info-main/src/main/java/pl/put/poznan/transformer/data/");
+        filePath = new String("src/main/java/pl/put/poznan/transformer/data/");
         buildingArray = new ArrayList<>();
         floorArray = new ArrayList<>();
         roomArray = new ArrayList<>();
