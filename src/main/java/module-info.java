@@ -1,14 +1,9 @@
-module pl.put.poznan.transformer.gui.app {
-    requires javafx.controls;
-    requires javafx.fxml;
+open module pl.put.poznan.transformer {
     requires spring.boot;
     requires spring.boot.autoconfigure;
     requires spring.web;
     requires org.slf4j;
 
-
-    opens pl.put.poznan.transformer.gui.app to javafx.fxml;
-    opens pl.put.poznan.transformer.models to javafx.base;
-    exports pl.put.poznan.transformer.gui.app;
-    exports pl.put.poznan.transformer.app;
+    exports pl.put.poznan.transformer.data;
+    exports pl.put.poznan.transformer.models;
 }

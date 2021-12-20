@@ -1,4 +1,4 @@
-package pl.put.poznan.transformer.gui.app;
+package com.example.demo;
 
 import javafx.beans.property.SimpleFloatProperty;
 import javafx.beans.property.SimpleStringProperty;
