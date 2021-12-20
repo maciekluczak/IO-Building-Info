@@ -1,9 +1,8 @@
+/home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/models/Localization.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/module-info.java
-/home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/gui/app/HelloApplication.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/models/Room.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/models/Floor.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/models/Building.java
-/home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/gui/app/HelloController.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/models/Location.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/data/DataHolder.java
 /home/nikita/PUT/IO/IO-Building-Info/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java

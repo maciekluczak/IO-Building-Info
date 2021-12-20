@@ -3,20 +3,49 @@ package pl.put.poznan.transformer.models;
 import java.io.Serializable;
 import java.util.List;
 
-public abstract class Location implements Serializable {
+/**
+ * abstrakcyjna klasa lokacji z ktorej dziedzicza klasy:
+ *          Room
+ *          Building
+ *          Floor
+ */
+
+public abstract class Location implements Localization, Serializable {
 
     private int id;
     private String name;
 
+    /**
+     * pusty konstruktor
+     */
     public Location(){
     }
+
+    /**
+     * konstruktor o parametrach:
+     *
+     * @param id    id lokacji
+     * @param name  nazwa lokacji
+     */
     public Location(int id, String name){
         this.id = id;
         this.name = name;
     }
+
+    /**
+     * funkcja zwracajaca id lokacji
+     *
+     * @return  id lokacji
+     */
     public int getId(){
         return id;
     }
+
+    /**
+     * funkcja zwracajaca nazwe lokacji
+     *
+     * @return nazwa lokacji
+     */
     public String getName(){
         return name;
     }

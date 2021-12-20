@@ -1,0 +1,4 @@
+--patch-module
+pl.put.poznan.transformer=_
+--add-reads
+pl.put.poznan.transformer=ALL-UNNAMED
