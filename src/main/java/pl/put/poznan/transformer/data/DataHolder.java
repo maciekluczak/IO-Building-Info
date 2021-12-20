@@ -17,7 +17,7 @@ public class DataHolder  {
 
     public DataHolder() {
         //Create Arrays for models
-        filePath = new String("IO-Building-Info-main/src/main/java/pl/put/poznan/transformer/data/");
+        filePath = new String("src/main/java/pl/put/poznan/transformer/data/");
         buildingArray = new ArrayList<>();
         floorArray = new ArrayList<>();
         roomArray = new ArrayList<>();
@@ -165,6 +165,7 @@ public class DataHolder  {
     //ADD element to Array of model <building, room, floor>
     public void addBuilding(Building newBuilding) throws IOException {
         buildingArray.add(newBuilding);
+        
     }
     public void addRoom(Room newRoom) throws IOException {
         roomArray.add(newRoom);

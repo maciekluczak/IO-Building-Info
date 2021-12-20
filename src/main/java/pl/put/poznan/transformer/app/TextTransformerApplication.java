@@ -2,7 +2,9 @@ package pl.put.poznan.transformer.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import pl.put.poznan.transformer.data.JasonConverter;
 import pl.put.poznan.transformer.data.DataHolder;
+import pl.put.poznan.transformer.data.JasonConverter;
 import pl.put.poznan.transformer.models.Building;
 import pl.put.poznan.transformer.models.Floor;
 import pl.put.poznan.transformer.models.Room;
@@ -12,14 +14,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+// creating json file
+
 @SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest"})
 public class TextTransformerApplication {
+
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         SpringApplication.run(TextTransformerApplication.class, args);
-
-
 
         //Read ALL Models from File (Folder> data)
         DataHolder dataHolder = new DataHolder();
@@ -29,8 +32,9 @@ public class TextTransformerApplication {
         dataHolder.showData();
 
 //      Set Building B1 From file
-        Building b1= dataHolder.getBuildingArray().get(0);
+        Floor b1= dataHolder.getFloorArray().get(0);
 
+        new JasonConverter();
 
 // Input data (Manual)
 
