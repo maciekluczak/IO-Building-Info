@@ -14,3 +14,5 @@ Dla administratorów budynków, którzy pragną optymalizować koszty zarządzan
   - heating = poziom zużycia energii ogrzewania (float)
   - light – łączna moc oświetlenia
 
+## Diagram UML
+
