@@ -12,7 +12,6 @@ import pl.put.poznan.transformer.models.Room;
 
 import java.util.List;
 
-
 @RestController
 public class LocationController {
 

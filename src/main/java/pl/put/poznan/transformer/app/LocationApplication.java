@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest"})
+@SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest","pl.put.poznan.transformer.config" })
 public class LocationApplication {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
