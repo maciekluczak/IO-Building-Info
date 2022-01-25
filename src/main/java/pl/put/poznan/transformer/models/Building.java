@@ -1,5 +1,6 @@
 package pl.put.poznan.transformer.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,7 @@ import java.util.List;
 /**
  * klasa budynku
  */
-public class Building extends Location{
+public class Building extends Location {
     private List<Floor> floors;
 
     /**
@@ -99,6 +100,7 @@ public class Building extends Location{
         float sumCube = this.getCube();
         return sumLight / sumCube;
     }
+
 
     /**
      * funkcja sprawdzajaca pokoje przekraczajace dopuszczalmny limit zuzycia energii na ogrzewanie
