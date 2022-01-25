@@ -16,4 +16,5 @@ Dla administratorów budynków, którzy pragną optymalizować koszty zarządzan
 
 ## Diagram UML
 
-![diagramUML](https://user-images.githubusercontent.com/67105405/146875725-172051b1-bccb-4e36-80a2-b85cdadf8df5.png)
+
+<img width="613" alt="diagramUML" src="https://user-images.githubusercontent.com/67105405/150929486-7147201a-e139-4a9c-8121-c1a33dad9907.png">
