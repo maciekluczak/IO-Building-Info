@@ -1,0 +1,73 @@
+@import "../../colors";
+.building-form{
+  &-input-field{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+
+    margin:  5px auto;
+
+  }
+  &-room{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-floor-container{
+    display: flex;
+    flex-direction: column;
+  }
+  &-add-floor{
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  &-floor-input {
+    margin: 5px auto;
+    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input[type="text"], input[type="number"]{
+      height: 20px;
+    }
+  }
+
+  &-submit{
+    color: $white;
+    outline: none;
+    height: 35px;
+    width: 100px;
+    align-self: flex-end;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 16px;
+    background-color: $green;
+    &:disabled{
+      background-color: $third;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &-add-button{
+    color: $white;
+    outline: none;
+    height: 35px;
+    width: 100px;
+    align-self: flex-end;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 16px;
+    background-color: $blue;
+
+  }
+
+}
