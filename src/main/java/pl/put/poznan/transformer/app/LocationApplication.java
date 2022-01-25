@@ -36,7 +36,7 @@ public class LocationApplication {
 
 //        //najpierw tworzymy pokoje
 //        Room r1 = new Room("b1",12,10,1.2f,10.8f);
-//      Room r2 = new Room("b1", 1,2,3,4);
+//      Room r2 = new Room("b1", 1.1f,2,3,4);
 //      Room r3 = new Room("b1",21,30,5,8);
 //
 ////        potem dodajemy je do listy, ktora posluzy nam do utworzenia pietra

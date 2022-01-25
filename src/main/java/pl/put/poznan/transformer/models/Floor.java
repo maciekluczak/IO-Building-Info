@@ -92,6 +92,7 @@ public class Floor extends Location {
         return this.rooms;
     }
 
+
     /**
      * funkcja zwracajaca liste pokojow przekraczajacych limit zuzycia energii na ogrzewanie
      *

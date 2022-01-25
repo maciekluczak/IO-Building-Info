@@ -7,8 +7,14 @@ import java.util.List;
 /**
  * Klasa pokoju w budynku
  */
-public class Room extends Location {
+public class Room extends Location  {
     private float area, cube, heating, light;
+
+    /**
+     * pusty konstruktor
+     */
+    public Room(){
+    }
 
     /**
      * konstruktor z parametrami:
@@ -22,10 +28,15 @@ public class Room extends Location {
 
     public Room( String name, float area, float cube, float heating, float light){
         super( name);
-        this.area = area;
-        this.cube = cube;
-        this.heating = heating;
-        this.light = light;
+        if(testingInput(name, area, cube, heating, light)){
+            this.area = area;
+            this.cube = cube;
+            this.heating = heating;
+            this.light = light;
+        }
+        else{
+            throw new IllegalArgumentException("Incorrect input values");
+        }
     }
 
     /**
@@ -82,6 +93,7 @@ public class Room extends Location {
         return light/cube;
     }
 
+
     /**
      * funkcja sprawdzajaca czy pokoj przekracza limit wykorzystania energii na ogrzewanie
      *
@@ -95,6 +107,54 @@ public class Room extends Location {
             roomsList.add(this);
         }
         return roomsList;
+    }
+
+    /**
+     * funkcja  sluzacy do oceny poprawnosci danych wejsciowych
+     * @param name
+     * @param area
+     * @param cube
+     * @param heating
+     * @param light
+     * @return true/false
+     */
+
+    public boolean testingInput(String name, float area, float cube, float heating, float light){
+
+        if(name == null){
+            throw new IllegalArgumentException("input name can not be null");
+        }
+
+        boolean isAreaCorrect = isCorrect(area, ParamValues.AREA);
+        boolean isCubeCorrect = isCorrect(cube, ParamValues.CUBE);
+        boolean isHeatingCorrect = isCorrect(heating, ParamValues.HEATING);
+        boolean isLightCorrect = isCorrect(light, ParamValues.LIGHT);
+        if (isAreaCorrect && isCubeCorrect && isHeatingCorrect && isLightCorrect){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    /**
+     * funkcja pomocnicza sluzacy do oceny poprawnosci danych wejsciowych
+     * @param value
+     * @param validValues
+     * @return prawda/falsz
+     */
+
+    private boolean isCorrect(float value, ParamValues validValues){
+        if(value < 0) {
+            throw new IllegalArgumentException("Incorrect input values");
+        }
+
+        float maxValue = validValues.getMaxValue();
+        float minValue = validValues.getMinValue();
+        if (value > minValue && value < maxValue) {
+            return true;
+        }
+        return false;
     }
 
 }
