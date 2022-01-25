@@ -18,3 +18,10 @@ Dla administratorów budynków, którzy pragną optymalizować koszty zarządzan
 
 
 <img width="613" alt="diagramUML" src="https://user-images.githubusercontent.com/67105405/150929486-7147201a-e139-4a9c-8121-c1a33dad9907.png">
+
+
+
+
+## Akcje naprawcze
+W celu sprawniejszej pracy po przydzeleniu zadań ustaliśmy termin kolejnego spotkania w celu cząstkowego podsumowania wyników i ustalenia kolejnego termin spotkania.
+Średnio wypadały one raz na 8 dni, nie było potrzeby organizowania ich często ponieważ w razie małych wątpliwości dotyczących implementacji kodu komunikowaliśmy się między sobą w czasie rzeczywistym. Podejście to poprawiło spójność w implementacji kodu i pozwoliło uniknąć niekontrolowanemu nagromadzeniu sie pracy w przededniu oddania sprintu.
